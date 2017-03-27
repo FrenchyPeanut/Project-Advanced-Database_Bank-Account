@@ -11,7 +11,9 @@ session_start();
 
 <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css"  media="screen">
-
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+    <script type="text/javascript" src='http://s.codepen.io/assets/libs/modernizr.js'></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
@@ -80,15 +82,26 @@ So just for now, we'll use the usual username/password/email.
                 </p>
             </div>
 
-            <!-- Reseting the password -->
+            <!-- Resetting the password -->
             <div id="reset_password">
                 <p class="reset_message">Password Lost? </br>Please enter your Email address and you will receive a link to generate another one.</p>
-
-                
-
-            </div>
-
-        </div>
+        <form>
+            <p>
+                <label for="reset_email">Email</label>
+                <input type="email" placeholder="Email" id="reset_email">
+                <span>Please write your Email.</span>
+            </p>
+            <p>
+                <input type="submit" value="Reset my Password">
+            </p>
+        </form>
+        <p class="bottom_message"><a href="#">Back to Login</a></p>
     </div>
+
+<!-- Test: -->
+    <a href="#" class="close_form">Close</a>
+
+    </div>
+</div>
 
 </body>
