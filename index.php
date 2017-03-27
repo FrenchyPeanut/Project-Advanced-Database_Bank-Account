@@ -25,7 +25,7 @@ session_start();
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-logo_1.svg" alt="Logo">
             </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main_nav">
             <ul>
                 <?php
                 if(!isset($_SESSION['login'])) { ?>
@@ -46,11 +46,11 @@ session_start();
     <div class="user_modal">
         <div class="user_modal_container">
             <ul class="switcher">
-                <li><a href="#"></a></li>
+                <li><a href="#">Sign-In</a></li>
             </ul>
 
             <div id="login">
-                <form class="login_form">
+                <form class="_form">
                     <!-- I have no idea of what to insert inside the database
 for the login.
 So just for now, we'll use the usual username/password/email.
@@ -86,7 +86,7 @@ So just for now, we'll use the usual username/password/email.
             <!-- Resetting the password -->
             <div id="reset_password">
                 <p class="reset_message">Password Lost? </br>Please enter your Email address and you will receive a link to generate another one.</p>
-        <form>
+        <form class="_form">
             <p>
                 <label for="reset_email">Email</label>
                 <input type="email" placeholder="Email" id="reset_email">
