@@ -24,15 +24,15 @@
 
 		<nav class="main-nav">
 			<ul>
-				<!-- plop -->
-				<!-- <li><a class="cd-signin" href="#0">Sign-in</a></li> -->
-        <li><a class="cd-home" href="#l">HOME</a></li>
+				<!-- inser more links here -->
+				<li><a class="cd-signin" href="#0">Sign-in</a></li>
         <?php
         if(!isset($_SESSION['login'])) { ?>
-        <li><a class="cd-signin" href="#0">Sign-in</a></li>
-        <?php }
+        <li><a class="cd-signin" href="#">Sign-in</a></li>
+        <?php } ?>
+        <?php
         if(isset($_SESSION['login'])) { ?>
-        <li><a class="cd-account" href="#">My Account</a></li>
+        <li><a class="nav_account" href="#">My Account</a></li>
         <?php } ?>
 			</ul>
 		</nav>
