@@ -56,25 +56,26 @@ for the login.
 So just for now, we'll use the usual username/password/email.
 
 <!-  Username -->
-                    <p><!-- class="fieldset" -->
-                        <label for="login_username">Username</label>
+                    <p class="field">
+                        <label class="replace _username" for="login_username">Username</label>
                         <input id="login_username" type="text" placeholder="Username">
-                        <span>Enter your Username.</span>
+                        <span class="error_message">Enter your Username.</span>
                     </p>
 
-                    <p>
-                        <label for="login_password">Password</label>
+                    <p class="field">
+                        <label class="replace _password" for="login_password">Password</label>
                         <input id="login_password" type="text" placeholder="Password">
-                        <span>Enter your Password.</span>
+<a href="#0" class="hide_password">Hide</a>
+                        <span class="error_message">Enter your Password.</span>
                     </p>
 
-                    <p>
+                    <p class="field">
                         <input type="checkbox" id="remember_me">
                         <label>Remember me</label>
                     </p>
 
-                    <p>
-                        <input type="submit" value="Login" class="full_width">
+                    <p class="field">
+                        <input class="full-width padding border" type="submit" value="Login" class="full_width">
                     </p>
                 </form>
 
@@ -87,13 +88,13 @@ So just for now, we'll use the usual username/password/email.
             <div id="reset_password">
                 <p class="reset_message">Password Lost? </br>Please enter your Email address and you will receive a link to generate another one.</p>
         <form class="_form">
-            <p>
-                <label for="reset_email">Email</label>
+            <p class="field">
+                <label class="replace _email" for="reset_email">Email</label>
                 <input type="email" placeholder="Email" id="reset_email">
                 <span>Please write your Email.</span>
             </p>
-            <p>
-                <input type="submit" value="Reset my Password">
+            <p class="field">
+                <input class="full-width padding border" type="submit" value="Reset my Password">
             </p>
         </form>
         <p class="bottom_message"><a href="#">Back to Login</a></p>
